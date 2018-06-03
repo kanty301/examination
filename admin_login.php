@@ -1,4 +1,3 @@
-
 <div class="row">
     <form class="col s4 offset-s4" action="?location=action/admin_check.php" method="post">
         <h4 class="header-content">เข้าสู่ระบบผู้ดูแล</h4>

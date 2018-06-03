@@ -24,8 +24,8 @@ require "config/config.php";
         <div class="menu">
             <?php require "config/menu.html";?>
         </div>
-        <div class="content">
-            <?php require "$location"?>
+        <div class="content container">
+              <?php require "$location"?>
         </div>
     </div>
     </div>
@@ -47,5 +47,4 @@ require "config/config.php";
         });
     </script>
 </body>
-
 </html>
