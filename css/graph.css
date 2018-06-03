@@ -1,0 +1,54 @@
+.graph{
+    display: grid;
+    grid-template-columns: 26% 5% 50%;
+}
+.left{
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    padding-top: 35px;
+    font-size: 15px;
+}
+
+.left div{
+    padding: 15px 0 0 0;
+    align-self: flex-end;
+    border-bottom: solid #ccc 1px;
+    color: rgb(18, 22, 238);
+    width: 238px;
+
+}
+
+.right{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding-left: 5px;
+    padding-top: 72px;
+}
+
+.right div{
+    height: 100%;
+    width: 50px;
+    align-self: end;
+   
+}
+.detail{
+    display: grid;
+    grid-template-columns:2% 75%;
+    grid-gap:0.5em;
+    padding-top: 30px;
+    padding-left: 230px;
+    color: rgb(0, 0, 0);
+
+}
+.detail div{
+    width: 15px;
+    height: 15px;
+    align-self: end;
+    margin-bottom: 5px;
+}
+.g1{
+    background: #4268f4;
+}
+.g2{
+    background: #f20e3c;
+}

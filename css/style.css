@@ -1,0 +1,33 @@
+#box{
+    background: url(image/bg02.png);
+}
+.question{
+    float: left;
+    width: 100%;
+    background: #ec828236;
+    margin: 8px;
+    padding: 13px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.question h5{ font-size: 22px; }
+
+div[class=question-label] {
+    margin: 0 auto;
+    margin-left: 15px!important;  
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.clr{clear: both;}
+
+question-label label span{
+    font-size: 30px;
+}
+.header-content{
+    text-align: center;
+    color:#ee6e73;
+}
+
+
+#submit{ width: 100%!important; }
+
+.card-content p{ font-size: 25px;}
