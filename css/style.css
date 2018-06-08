@@ -1,3 +1,6 @@
+:root{
+    --size-arrowicon: 314%;
+}
 #box{
     background: url(image/bg02.png);
 }
@@ -29,5 +32,20 @@ question-label label span{
 
 
 #submit{ width: 100%!important; }
-
 .card-content p{ font-size: 25px;}
+
+.menu{
+    position: absolute;
+    width: 100%;
+}
+#menu-icon{
+    color:#fff; 
+    border-radius: 5px; 
+    position: absolute;
+    font-size: var(--size-arrowicon);
+    right:0px;
+    top:0px;
+}
+#close-menu{
+    font-size: var(--size-arrowicon);
+}

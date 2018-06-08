@@ -23,7 +23,10 @@ require "config/config.php";
     <div id="box">
         <div class="menu">
             <?php require "config/menu.html";?>
-        </div>
+        </div> 
+        <a href="#"><i class="material-icons light-blue darken-2"  id="menu-icon">arrow_drop_down</i></a>
+        <img src="image/banner.jpg" width="100%" alt="">
+
         <div class="content container">
               <?php require "$location"?>
         </div>
@@ -37,13 +40,22 @@ require "config/config.php";
         $(document).ready(function () {
             $(".card").hide();
             $("form").hide();
-
+            $(".menu").hide();
+            var divMenu = $(".menu").attr("display");
             $("form").fadeIn(500);
             $(".card").slideDown(500);
             $('input#input_text, textarea#textarea2').characterCounter();
             $('.tooltipped').tooltip();
             $('select').formSelect();
             $('.dropdown-trigger').dropdown()
+            $("#menu-icon").click(function(){
+                $(".menu").slideDown(500)
+                $(this).fadeOut(500)
+            })
+            $("#close-menu").click(function(){
+                $(".menu").slideUp(500);
+                $("#menu-icon").fadeIn(500)
+            });
         });
     </script>
 </body>
