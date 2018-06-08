@@ -49,3 +49,6 @@ question-label label span{
 #close-menu{
     font-size: var(--size-arrowicon);
 }
+#menu-active{
+    background-color: #027abc;
+}

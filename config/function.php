@@ -3,8 +3,8 @@
         if(isset($_SESSION['name'], $_SESSION['dep'])){return true; }else {return false;}
     }
 
-    function checkSession($session){
-        if(isset($_SESSION[$session])){return true; }else {return false;}
+    function checkSession($session,$navigation){
+        if(!isset($_SESSION[$session])){header("location=$navigation");}
     }
 
     function calScore($score, $total){
