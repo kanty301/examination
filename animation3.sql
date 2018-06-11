@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 02, 2018 at 02:11 PM
+-- Generation Time: Jun 11, 2018 at 05:14 AM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -83,12 +83,23 @@ INSERT INTO `question` (`quest_id`, `quest_q`, `quest_a`) VALUES
 CREATE TABLE `users` (
   `user_id` int(4) UNSIGNED ZEROFILL NOT NULL,
   `user_name` varchar(100) NOT NULL,
-  `user_dep` tinyint(2) NOT NULL,
+  `user_dep` varchar(50) NOT NULL,
   `user_pretest` tinyint(1) NOT NULL,
   `user_aftest` tinyint(1) NOT NULL,
   `user_status` tinyint(1) NOT NULL DEFAULT '0',
   `user_code` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`user_id`, `user_name`, `user_dep`, `user_pretest`, `user_aftest`, `user_status`, `user_code`) VALUES
+(0029, 'Kanty', 'General', 0, 1, 0, 123456),
+(0025, 'Test1 Test1', 'Plating', 0, 0, 0, 10),
+(0026, 'Test1 Test1', 'Plating', 0, 0, 0, 10),
+(0027, 'กาน กาน', 'Store', 1, 1, 0, 11),
+(0028, 'Test1 Test1', 'Technical', 0, 0, 0, 2147483647);
 
 --
 -- Indexes for dumped tables
@@ -132,7 +143,7 @@ ALTER TABLE `question`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(4) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `user_id` int(4) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
