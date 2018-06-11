@@ -12,6 +12,6 @@
     }
 
     function checkPass($score, $total){
-        if($total/$score <= 2){return 1;}else{return 0;}
+        if($score == 0 || $total/$score > 2){return 0;}else if($total/$score <= 2){return 1;}
     }
 ?>

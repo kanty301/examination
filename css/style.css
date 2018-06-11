@@ -1,5 +1,9 @@
 :root{
     --size-arrowicon: 314%;
+    --grid-gap: 10em;
+    --grid-padding: 10px;
+    --grid-widthImg: 400px;
+    --header-color: #ee6e73;
 }
 #box{
     background: url(image/bg02.png);
@@ -27,7 +31,7 @@ question-label label span{
 }
 .header-content{
     text-align: center;
-    color:#ee6e73;
+    color: var(--header-color);
 }
 
 
@@ -51,4 +55,22 @@ question-label label span{
 }
 #menu-active{
     background-color: #027abc;
+}
+.grid{
+    display: grid;
+    justify-content: center;
+    padding: var(--grid-padding);
+    grid-gap: var(--grid-gap);
+}
+.box-img1{
+    grid-template-columns: auto auto;
+}
+
+.box-img2{
+    grid-template-columns:auto auto auto;
+    
+}
+
+.box-item img{
+    width: var(--grid-widthImg);
 }

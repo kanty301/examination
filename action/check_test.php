@@ -12,11 +12,11 @@ for ($i = 1; $i <= $total_score; $i++) {
     }
 } // นับคะแนนทั้งหมด
 if (!isset($_SESSION['pretest_score'])) {
-    $_SESSION['pretest_score'] = $test_score; // สร้าง session เก็บคะแนนก่อนดูวีดีโอ
+    $_SESSION['pretest_score'] = checkPass($test_score, $total_score); // สร้าง session เก็บคะแนนก่อนดูวีดีโอ
     $report = "สรุปคะแนนแบบทดสอบก่อนชมวีดีโอ";
     $vdo = 'เริ่มชมวีดีโอ';
 } else {
-    $_SESSION['aftertest_score'] = $test_score; // สร้าง session เก็บคะแนนหลังดูวีดีโอ
+    $_SESSION['aftertest_score'] = checkPass($test_score, $total_score); // สร้าง session เก็บคะแนนหลังดูวีดีโอ
     $report = "สรุปคะแนนแบบทดสอบหลังชมวีดีโอ";
     $vdo = 'กลับไปชมวีดีโอ';
     if (!isset($_SESSION['membered'])) {
