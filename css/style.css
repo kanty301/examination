@@ -74,3 +74,25 @@ question-label label span{
 .box-item img{
     width: var(--grid-widthImg);
 }
+
+.badge{
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+}
+
+.badge-danger{
+    color: #fff!important;
+    background-color: #dc3545;
+}
+
+.badge-success {
+    color: #fff!important;
+    background-color: #28a745;
+}

@@ -9,10 +9,10 @@
         $sql = "SELECT * FROM admins WHERE admin_uname = '$username' AND admin_pwd = '$password'";
         $admin = mysqli_query($con,$sql);
         if(mysqli_num_rows($admin) > 0){ //ล็อกอินผ่าน
-            $_SESSION['login'] = 1;
-            $_SESSION['admin'] = 0;
+            $_SESSION['login'] = 1; //ถ้าเป็น admin = 1 , user = 0
+            $_SESSION['admin'] = 0; // เก็บสถานะการล็อกอินของ admin
             list($_SESSION['code'],$_SESSION['name'],$_SESSION['id']) = mysqli_fetch_array($admin);
-            header("location:?location=admin/dashboard.php");
+            header("location:?location=admin/user_report.php");
         }else{
             $card_alert = "รหัสผ่านหรือชื่อผู้ใช้ไม่ถูกต้อง";
             $card_location = "admin_login.php";

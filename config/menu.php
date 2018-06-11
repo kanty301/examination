@@ -29,8 +29,13 @@
           <i class="material-icons left">insert_chart</i>สรุปสถิติ</a>
       </li>
       <li>
-        <a href="?location=watch_animation.php">
-          <i class="material-icons left">edit</i>แก้ไขข้อมูลส่วนตัว</a>
+        <a href="?location=profile.php">
+          <i class="material-icons left">person</i>ข้อมูลส่วนตัว</a>
+      </li>
+      <li>
+        <a href="?location=action/logout.php">
+          <i class="material-icons left">power_settings_new
+</i>ออกจากระบบ</a>
       </li>
       <?php }?>
       <?php if (!isset($_SESSION['login'])) {?>
