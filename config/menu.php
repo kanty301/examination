@@ -32,18 +32,19 @@
         <a href="?location=profile.php">
           <i class="material-icons left">person</i>ข้อมูลส่วนตัว</a>
       </li>
-      <li>
-        <a href="?location=action/logout.php">
-          <i class="material-icons left">power_settings_new
-</i>ออกจากระบบ</a>
-      </li>
       <?php }?>
       <?php if (!isset($_SESSION['login'])) {?>
       <li>
         <a href="?location=admin_login.php">
           <i class="material-icons left">verified_user</i>ผู้ดูแล</a>
       </li>
-      <?php }?>
+      <?php }else{?>
+      <li>
+        <a href="?location=action/logout.php">
+          <i class="material-icons left">power_settings_new
+          </i>ออกจากระบบ</a>
+      </li>
+      <?php } ?>
 
       <li>
         <a href="#">

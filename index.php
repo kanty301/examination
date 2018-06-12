@@ -20,18 +20,19 @@ require "config/config.php";
 </head>
 
 <body>
+
     <div id="box">
         <div class="menu">
             <?php require "config/menu.php";?>
         </div> 
         <a href="#"><i class="material-icons light-blue darken-2"  id="menu-icon">arrow_drop_down</i></a>
-            <img src="image/banner.jpg" width="100%" alt="">
+        <img src="image/banner.jpg" width="100%" alt="">
+        
         <div class="content container">
-              <?php require "$location"?>
+            <?php require "$location"?>
         </div>
     </div>
-    </div>
-    <!-- End Container-->
+   
     <?php require 'mysql/unconn.php';?>
     <script src="script/jquery.js"></script>
     <script src="script/materialize.js"></script>

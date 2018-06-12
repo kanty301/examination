@@ -5,16 +5,25 @@
     --grid-widthImg: 400px;
     --header-color: #ee6e73;
 }
-#box{
-    background: url(image/bg02.png);
+ 
+body{
+    background-image: linear-gradient( 135deg, #ABDCFF 50%, #0396FF 80%);
+}
+.bg-img{
+    background: url('image/bg02.png');
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    filter: blur(5px);
 }
 .question{
     float: left;
     width: 100%;
-    background: #ec828236;
+    background-image: linear-gradient( 135deg, #ABDCFF 100%, #0396FF 10%);
     margin: 8px;
     padding: 13px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
 }
 .question h5{ font-size: 22px; }
 
@@ -61,6 +70,7 @@ question-label label span{
     justify-content: center;
     padding: var(--grid-padding);
     grid-gap: var(--grid-gap);
+    margin-top: 50px;
 }
 .box-img1{
     grid-template-columns: auto auto;
@@ -68,11 +78,12 @@ question-label label span{
 
 .box-img2{
     grid-template-columns:auto auto auto;
-    
 }
 
 .box-item img{
     width: var(--grid-widthImg);
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px #000 ;
 }
 
 .badge{
@@ -96,3 +107,5 @@ question-label label span{
     color: #fff!important;
     background-color: #28a745;
 }
+
+.user-form{ background: #fff; }
