@@ -29,7 +29,7 @@
           <i class="material-icons left">insert_chart</i>สรุปสถิติ</a>
       </li>
       <li>
-        <a href="?location=profile.php">
+        <a href="?location=admin/profile.php">
           <i class="material-icons left">person</i>ข้อมูลส่วนตัว</a>
       </li>
       <?php }?>

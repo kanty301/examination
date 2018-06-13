@@ -1,8 +1,6 @@
 
 <?php
-    if(!isset($_SESSION['admin'])){
-       header("location:?location=wellcome.html");
-    }
+    require('admin/admin_session.php');
     $pass = array("<span class='badge badge-danger'>ไม่ผ่าน</span>","<span class='badge badge-success'>ผ่าน</span>");
     $sql = "SELECT user_code,user_name, user_dep, user_pretest, user_aftest FROM users";
     $user = mysqli_query($con,$sql);

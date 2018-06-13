@@ -2,8 +2,8 @@
 require 'mysql/connectdb.php';
 require 'config/function.php';
 
-if (isset($_SESSION['user'])) {
-    if ($_SESSION['user'] == 1) {
+if (isset($_SESSION['login'])) {
+    if ($_SESSION['login'] == 1) {
         $total_user = mysqli_num_rows(mysqli_query($con, "SELECT * FROM users"));
         $pretest_pass = mysqli_num_rows(mysqli_query($con, "SELECT user_pretest FROM users WHERE user_pretest = '1'"));
         $pretest_fail = mysqli_num_rows(mysqli_query($con, "SELECT user_pretest FROM users WHERE user_pretest = '0'"));
