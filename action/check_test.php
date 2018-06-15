@@ -15,7 +15,7 @@ if (!isset($_SESSION['pretest_score'])) {
     $_SESSION['pretest_score'] = checkPass($test_score, $total_score); // สร้าง session เก็บคะแนนก่อนดูวีดีโอ
     $report = "สรุปคะแนนแบบทดสอบก่อนชมวีดีโอ";
     $vdo = 'เริ่มชมวีดีโอ';
-} else {
+} else if(isset($_SESSION['pretest_score'],$_SESSION['vdo'])) {
     $_SESSION['aftertest_score'] = checkPass($test_score, $total_score); // สร้าง session เก็บคะแนนหลังดูวีดีโอ
     $report = "สรุปคะแนนแบบทดสอบหลังชมวีดีโอ";
     $vdo = 'กลับไปชมวีดีโอ';

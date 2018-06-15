@@ -26,7 +26,7 @@ require "config/config.php";
             <?php require "config/menu.php";?>
         </div> 
         <a href="#"><i class="material-icons light-blue darken-2"  id="menu-icon">arrow_drop_down</i></a>
-        <img src="image/banner.jpg" width="100%" alt="">
+        <img src="image/banner.jpg" width="100%" alt="" id="banner">
         
         <div class="content container">
             <?php require "$location"?>
