@@ -38,7 +38,7 @@ if (!isset($_SESSION['pretest_score'])) {
         mysqli_query($con, $sql);
     }
 }
-$result_score = checkPass($test_score,$total_score) == 1 ? '<p style="color:#25a553">ผล: ผ่าน</p>' : '<p style="color:#e02626">ผล: ไม่ผ่าน</p>'; // เอาไว้แสดงคำว่าผ่านหรือไม่ผ่าน
+$result_score = $test_score >= 8 ? 'ผ่าน' : 'ไม่ผ่าน'; // เอาไว้แสดงคำว่าผ่านหรือไม่ผ่าน
 ?>
   <div class="row">
     <div class="col s6  offset-s3">
@@ -46,7 +46,7 @@ $result_score = checkPass($test_score,$total_score) == 1 ? '<p style="color:#25a
         <div class="card-content">
             <p><?php echo $report; ?></p>
           <p>คุณได้คะแนน <?php echo $test_score; ?> คะแนน</p>
-          <?php echo $result_score; ?>
+          <p>ผล: <?php echo $result_score; ?></p>
         </div>
         <div class="card-action">
           <a href="?location=watch_animation.php" class="light-blue darken-2 waves-effect waves-light btn"><?php echo $vdo; ?></a>
