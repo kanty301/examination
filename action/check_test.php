@@ -2,6 +2,9 @@
 if (!isset($_SESSION["id"], $_SESSION["name"], $_SESSION["name"])) {
     header('location:?location=register.php');
 }
+if(isset( $_SESSION['aftertest_score'] )){
+  header("location: ?location=after_test.php");
+}
 $test_score = 0;
 for ($i = 1; $i <= $total_score; $i++) {
     $indexQuestion = 'c' . $i;
