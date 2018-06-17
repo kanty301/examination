@@ -13,6 +13,7 @@
             <td>แผนก</td>
             <td class='centered'>แบบทดสอบก่อนดูวีดีโอ</td>
             <td class='centered'>แบบทดสอบหลังดูวีดีโอ</td>
+            <td class='centered'>ลบ</td>
         </tr>
 <?php
     while(list($code, $name, $dep, $u_pretest, $u_aftest ) = mysqli_fetch_array($user)){
@@ -22,6 +23,7 @@
             echo "<td>$dep</td>";
             echo "<td class='centered'>$pass[$u_pretest]</td>";
             echo "<td class='centered'>$pass[$u_aftest]</td>";
+            echo "<td class='centered'><a href='admin/delete_user.php?user_code=$code' onclick='confirm(\'คุณต้องการลบผู้ใช้หรือไม่\');'>ลบ</a></td>";
         echo '</tr>';
     }
 ?>
