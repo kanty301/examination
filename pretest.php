@@ -32,8 +32,6 @@ else {?>
     </div>
     <div class="clr"></div>
     <?php } // วนลูปคำถาม?>
-    <div class="question">
         <button id="submit" type="submit" class="waves-effect waves-light btn">ส่งคำตอบ</button>
-    </div>
 </form>
 <?php } // ถ้ายังไม่เคยทำแบบทดสอบก่อนดูวีดีโอ ?>
